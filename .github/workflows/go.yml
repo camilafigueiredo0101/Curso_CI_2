@@ -51,5 +51,6 @@ jobs:
 
 
   docker:
-    meeds: build
+    needs: build
     uses: ./.github/workflows/Docker.yml
+    secrets: inherit
